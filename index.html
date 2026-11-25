@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Dom opieki Prażmów - Dom Opieki Magnolia, całodobowa opieka nad seniorem</title>
+<meta name="description" content="Dom Opieki Magnolia w Prażmowie: całodobowa opieka, rehabilitacja i 5 posiłków dziennie. Pokoje 2- i 3-osobowe z łazienkami, budynek bez barier. Zezwolenie Wojewody Mazowieckiego nr 271.">
+<meta name="theme-color" content="#5B2149">
+<link rel="icon" href="img/ikona-48.png" sizes="48x48">
+<link rel="icon" href="img/ikona-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/ikona-180.png">
+<link rel="preload" href="fonts/lora-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/dom-800.webp" media="(max-width: 760px)" imagesrcset="img/dom-540.webp 540w, img/dom-800.webp 800w, img/dom-1100.webp 1100w" imagesizes="100vw">
+<link rel="preload" as="image" href="img/hero-1920.webp" media="(min-width: 761px)" imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="100vw">
+<style>
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/figtree-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/figtree-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--sliwa:#5B2149;--sliwa-c:#3A1530;--storczyk:#A33190;--tekst:#1F1A1E;--szary:#F2F3F5;--linia:#E2E4E8;--opis:#55505A;--naglowek:72px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--naglowek)}
+body{margin:0;background:#fff;color:var(--tekst);font:400 18px/1.65 "Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--sliwa)}
+h1,h2,h3{font-family:"Lora",Georgia,serif;font-weight:600;line-height:1.2;margin:0;color:var(--tekst)}
+h2{font-size:clamp(1.75rem,1.2rem + 2vw,2.6rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1em}
+.w{width:min(1180px,100% - 32px);margin-inline:auto}
+.dlonie{display:block;width:150px;height:22px;margin:18px 0 26px;color:var(--storczyk)}
+.dlonie path{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+.srodek{text-align:center}.srodek .dlonie{margin-inline:auto}
+/* przyciski */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:54px;padding:0 26px;border-radius:6px;font:600 1.05rem/1.2 "Figtree",sans-serif;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-pelny{background:var(--sliwa);color:#fff}
+.btn-pelny:hover{background:var(--sliwa-c)}
+.btn-jasny{background:#fff;color:var(--sliwa)}
+.btn-jasny:hover{background:var(--szary)}
+.btn-obrys{border-color:rgba(255,255,255,.85);color:#fff}
+.btn-obrys:hover{background:rgba(255,255,255,.14)}
+.btn svg{width:20px;height:20px;flex:none}
+/* naglowek */
+.gora{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--linia);height:var(--naglowek)}
+.gora .w{display:flex;align-items:center;justify-content:space-between;height:100%;gap:20px}
+.logo img{height:60px;width:auto}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{color:var(--tekst);text-decoration:none;font-weight:500;font-size:1rem;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--storczyk)}
+.menu .btn{min-height:46px;padding:0 18px;color:#fff;border:0}
+.burger{display:none;background:none;border:0;width:48px;height:48px;padding:12px;cursor:pointer;color:var(--tekst)}
+.burger span{display:block;height:2px;background:currentColor;margin:5px 0;transition:transform .25s,opacity .25s}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--naglowek));display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--sliwa-c)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,12,32,.82) 0%,rgba(38,12,32,.6) 38%,rgba(38,12,32,.1) 70%,rgba(38,12,32,0) 100%)}
+.hero .w{position:relative;z-index:1;padding:28px 0}
+.hero-tekst{max-width:700px}
+.hero h1{color:#fff;font-size:clamp(2rem,1.2rem + 2.3vw,3.2rem);margin-bottom:20px}
+.hero p.lead{font-size:clamp(1.05rem,.95rem + .4vw,1.25rem);max-width:520px;margin-bottom:30px;color:#f6eef3}
+.hero .przyciski{display:flex;flex-wrap:wrap;gap:12px}
+.hero .zezw{margin:26px 0 0;font-size:.95rem;color:#eadde5}
+/* sekcje */
+section{padding:clamp(64px,8vw,110px) 0}
+.szara{background:var(--szary)}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.dwa .foto img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.tekst-opis{color:var(--opis)}
+.miejsca{margin-top:6px;font-size:1rem;color:var(--opis);border-top:1px solid var(--linia);padding-top:18px}
+/* pokoje */
+.lista-cech{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin:8px 0 40px;padding:0;list-style:none}
+.lista-cech li{padding:14px 0;border-bottom:1px solid var(--linia)}
+.galeria-wrap{position:relative}
+.galeria{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px}
+.galeria::-webkit-scrollbar{display:none}
+.galeria.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.galeria figure{margin:0;flex:0 0 min(560px,82%);scroll-snap-align:start}
+.galeria button{all:unset;display:block;cursor:zoom-in;width:100%}
+.galeria img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px;user-select:none;-webkit-user-drag:none}
+.galeria figcaption{font-size:.95rem;color:var(--opis);padding-top:10px}
+.strzalki{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+.strzalki button{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--sliwa);background:#fff;color:var(--sliwa);cursor:pointer;display:grid;place-items:center}
+.strzalki button:hover{background:var(--sliwa);color:#fff}
+.strzalki svg{width:20px;height:20px}
+/* opieka */
+.ciemna{background:var(--sliwa-c);color:#efe4eb}
+.ciemna h2,.ciemna h3{color:#fff}
+.ciemna .dlonie{color:#d58fc7}
+.opieka{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,72px);align-items:stretch}
+.opieka .foto{display:flex;flex-direction:column}
+.opieka ul{list-style:none;margin:0;padding:0}
+.opieka li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.opieka li:first-child{border-top:1px solid rgba(255,255,255,.16)}
+.opieka li b{display:block;font-family:"Lora",serif;font-weight:600;font-size:1.2rem;color:#fff;margin-bottom:2px}
+.opieka li span{color:#d9c8d3;font-size:1rem}
+.opieka .foto img{width:100%;flex:1;min-height:0;height:100%;object-fit:cover;border-radius:4px}
+.opieka .foto p{margin-top:18px;color:#d9c8d3;font-size:1rem}
+/* okolica */
+.okolica .foto img{aspect-ratio:3/4}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,64px);align-items:stretch}
+.znak{width:74px;height:auto;margin-bottom:18px}
+.dane{list-style:none;padding:0;margin:26px 0 30px}
+.dane li{padding:12px 0;border-bottom:1px solid var(--linia);display:flex;gap:14px;align-items:baseline}
+.dane li span{min-width:84px;color:var(--opis);font-size:.95rem}
+.dane a{font-weight:600;text-decoration:none}
+.dane a:hover{text-decoration:underline}
+.mapa{position:relative;min-height:380px;background:var(--szary);border-radius:4px;overflow:hidden}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa .zastep{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;color:var(--opis)}
+/* stopka */
+.stopka{background:#1E1A1E;color:#bfb6bd;padding:52px 0 26px;font-size:.98rem}
+.stopka .w{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px}
+.stopka img{height:64px;width:auto;margin-bottom:12px}
+.stopka a{color:#e9e1e7;text-decoration:none}
+.stopka a:hover{text-decoration:underline}
+.stopka h3{color:#fff;font-size:1.05rem;margin-bottom:10px;font-family:"Figtree",sans-serif;font-weight:600}
+.stopka p{margin:0 0 .4em}
+.stopka .dol{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;margin-top:10px;font-size:.9rem}
+/* powiekszenie */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,10,18,.93);display:none;align-items:center;justify-content:center;padding:16px}
+.lb.otwarte{display:flex}
+.lb img{max-width:min(1200px,100%);max-height:86vh;width:auto;border-radius:4px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:52px;height:52px;border-radius:50%;cursor:pointer;font-size:26px;line-height:1}
+.lb .zamknij{top:14px;right:14px}.lb .pop{left:14px;top:50%;transform:translateY(-50%)}.lb .nast{right:14px;top:50%;transform:translateY(-50%)}
+.lb p{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#eee;margin:0;font-size:.95rem}
+@media (max-width:1000px){
+  .lista-cech{grid-template-columns:1fr 1fr}
+  .stopka .w{grid-template-columns:1fr 1fr}
+  .stopka .w>div:first-child{grid-column:1/-1}
+}
+@media (max-width:900px){
+  :root{--naglowek:64px}
+  .logo img{height:46px}
+  .burger{display:block}
+  .menu{position:fixed;top:var(--naglowek);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:8px 16px 20px;border-bottom:1px solid var(--linia);transform:translateY(-130%);transition:transform .3s;z-index:-1}
+  .menu.otwarte{transform:none}
+  .menu a{padding:14px 4px;border-bottom:1px solid var(--linia);font-size:1.1rem}
+  .menu .btn{margin-top:14px;min-height:52px}
+  .burger.otwarte span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger.otwarte span:nth-child(2){opacity:0}
+  .burger.otwarte span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .dwa,.opieka,.kontakt{grid-template-columns:1fr}
+  .dwa .foto{order:-1}
+  .dwa .foto img{aspect-ratio:4/3}
+  .opieka .foto img{aspect-ratio:4/3;flex:none;height:auto}
+  .okolica .foto img{aspect-ratio:4/3}
+}
+@media (max-width:760px){
+  .hero{align-items:flex-end}
+  .hero::after{background:linear-gradient(180deg,rgba(38,12,32,0) 0%,rgba(38,12,32,.15) 30%,rgba(38,12,32,.78) 62%,rgba(38,12,32,.9) 100%)}
+  .hero picture img{object-position:50% 30%}
+  .hero .w{padding:72px 0 24px}
+  .hero h1{margin-bottom:12px;font-size:clamp(1.65rem,1.2rem + 2.2vw,2.1rem)}
+  .hero p.lead{margin-bottom:24px}
+  .hero .przyciski{flex-direction:column}
+  .hero .btn{width:100%}
+  .hero .zezw{margin-top:16px;font-size:.88rem}
+  .lista-cech{grid-template-columns:1fr}
+  .galeria figure{flex-basis:86%}
+  .strzalki{display:none}
+}
+@media (max-width:420px){body{font-size:17px}}
+@media (max-width:760px) and (max-height:700px){.hero .w{padding:24px 0 16px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<style>
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Dom Opieki Magnolia","image":"img/dom-800.webp","telephone":"+48600332096","email":"domopiekimagnolia@gmail.com","address":{"@type":"PostalAddress","streetAddress":"ul. Czołchańskiego 12B","postalCode":"05-505","addressLocality":"Prażmów","addressCountry":"PL"}}</script>
+</head>
+<body>
+<header class="gora">
+  <div class="w">
+    <a class="logo" href="#" aria-label="Dom Opieki Magnolia - strona główna"><img src="img/logo.png" width="423" height="268" alt="Dom Opieki Magnolia"></a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#dom">O domu</a>
+      <a href="#pokoje">Pokoje</a>
+      <a href="#opieka">Opieka</a>
+      <a href="#okolica">Okolica</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-pelny" href="tel:+48600332096"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5c.5-.2 1.1 0 1.4.5l1.9 3.3c.3.5.2 1.1-.2 1.5l-1.5 1.3c1 2.2 2.8 4 5 5l1.3-1.5c.4-.4 1-.5 1.5-.2l3.3 1.9c.5.3.7.9.5 1.4l-.8 2.1c-.3.8-1.1 1.3-2 1.2C10.2 19.4 4.6 13.8 3.9 7c-.1-.9.4-1.7 1.2-2z" fill="currentColor"/></svg>600 332 096</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Dom Opieki Magnolia">
+  <picture>
+    <source media="(max-width: 760px)" srcset="img/dom-540.webp 540w, img/dom-800.webp 800w, img/dom-1100.webp 1100w" sizes="100vw">
+    <img src="img/hero-1920.webp" srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="100vw" width="1920" height="1281" alt="Jasny pokój w Domu Opieki Magnolia ze świetlikami w dachu" fetchpriority="high">
+  </picture>
+  <div class="w">
+    <div class="hero-tekst">
+      <h1>Dom opieki w Prażmowie, w którym senior jest w dobrych rękach</h1>
+      <p class="lead">Całodobowa opieka, rehabilitacja i pięć posiłków dziennie. Jasne pokoje z łazienkami, cisza i zieleń wokół domu.</p>
+      <div class="przyciski">
+        <a class="btn btn-jasny" href="tel:+48600332096"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5c.5-.2 1.1 0 1.4.5l1.9 3.3c.3.5.2 1.1-.2 1.5l-1.5 1.3c1 2.2 2.8 4 5 5l1.3-1.5c.4-.4 1-.5 1.5-.2l3.3 1.9c.5.3.7.9.5 1.4l-.8 2.1c-.3.8-1.1 1.3-2 1.2C10.2 19.4 4.6 13.8 3.9 7c-.1-.9.4-1.7 1.2-2z" fill="currentColor"/></svg>Zadzwoń: 600 332 096</a>
+        <a class="btn btn-obrys" href="#pokoje">Zobacz pokoje</a>
+      </div>
+      <p class="zezw">Zezwolenie Wojewody Mazowieckiego nr 271</p>
+    </div>
+  </div>
+</section>
+
+<section id="dom">
+  <div class="w dwa">
+    <div>
+      <h2>Domowa atmosfera, pełna ciepła i szacunku</h2>
+      <svg class="dlonie" viewBox="0 0 150 22" aria-hidden="true"><path d="M1 5H52C61 5 63 19 75 19S89 5 98 5H149"/></svg>
+      <p>Dom Opieki Magnolia to bezpieczne miejsce stworzone z myślą o osobach starszych, niepełnosprawnych i przewlekle chorych. Mamy zezwolenie Wojewody Mazowieckiego (nr 271) i wieloletnie doświadczenie w prowadzeniu placówek opiekuńczych.</p>
+      <p class="tekst-opis">Nad zdrowiem i samopoczuciem mieszkańców czuwa wykwalifikowany, empatyczny personel opiekuńczo-pielęgniarski. Pomagamy w codziennych sprawach i jesteśmy obok na co dzień, tak żeby każdy czuł się u nas jak w domu. Mieszkańcy mogą przywieźć własne meble.</p>
+      <p class="miejsca">Mieszkają u nas seniorzy z Prażmowa i okolic: Piaseczna, Zalesia Górnego, Ustanowa, Grójca, Tarczyna i Konstancina-Jeziorny.</p>
+    </div>
+    <div class="foto">
+      <picture>
+        <source media="(max-width: 760px)" srcset="img/hol-640.webp 640w, img/hol-1000.webp 1000w" sizes="calc(100vw - 32px)">
+        <img src="img/dom-800.webp" srcset="img/dom-540.webp 540w, img/dom-800.webp 800w, img/dom-1100.webp 1100w" sizes="(max-width: 900px) calc(100vw - 32px), 560px" width="800" height="1067" loading="lazy" alt="Dom Opieki Magnolia">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section id="pokoje" class="szara">
+  <div class="w">
+    <h2>Pokoje i wnętrza</h2>
+    <svg class="dlonie" viewBox="0 0 150 22" aria-hidden="true"><path d="M1 5H52C61 5 63 19 75 19S89 5 98 5H149"/></svg>
+    <ul class="lista-cech">
+      <li>Jasne pokoje 2- i 3-osobowe z prywatnymi łazienkami</li>
+      <li>Budynek bez barier architektonicznych, z windą</li>
+      <li>Szerokie, wygodne korytarze</li>
+      <li>Przytulna biblioteka i wspólny pokój dzienny</li>
+      <li>Sala rehabilitacyjna z wyposażeniem</li>
+      <li>Możliwość przywiezienia własnych mebli</li>
+    </ul>
+    <div class="galeria-wrap">
+      <div class="galeria" id="galeria">
+        <figure><button type="button" data-duze="img/pokoj-1-1200.webp"><img src="img/pokoj-1-600.webp" srcset="img/pokoj-1-600.webp 600w, img/pokoj-1-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Pokój dwuosobowy ze świetlikami"></button><figcaption>Pokój dwuosobowy ze świetlikami</figcaption></figure>
+        <figure><button type="button" data-duze="img/pokoj-2-1200.webp"><img src="img/pokoj-2-600.webp" srcset="img/pokoj-2-600.webp 600w, img/pokoj-2-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Pokój na poddaszu"></button><figcaption>Pokój na poddaszu</figcaption></figure>
+        <figure><button type="button" data-duze="img/pokoj-3-1200.webp"><img src="img/pokoj-3-600.webp" srcset="img/pokoj-3-600.webp 600w, img/pokoj-3-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Pokój z dużym oknem"></button><figcaption>Pokój z dużym oknem</figcaption></figure>
+        <figure><button type="button" data-duze="img/lazienka-1200.webp"><img src="img/lazienka-600.webp" srcset="img/lazienka-600.webp 600w, img/lazienka-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Łazienka przy pokoju z uchwytami i prysznicem bez progu"></button><figcaption>Łazienka przy pokoju</figcaption></figure>
+        <figure><button type="button" data-duze="img/korytarz-1200.webp"><img src="img/korytarz-600.webp" srcset="img/korytarz-600.webp 600w, img/korytarz-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Szeroki korytarz"></button><figcaption>Szeroki korytarz</figcaption></figure>
+        <figure><button type="button" data-duze="img/dzienny-1200.webp"><img src="img/dzienny-600.webp" srcset="img/dzienny-600.webp 600w, img/dzienny-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Pokój dzienny"></button><figcaption>Pokój dzienny</figcaption></figure>
+        <figure><button type="button" data-duze="img/biblioteka-1200.webp"><img src="img/biblioteka-600.webp" srcset="img/biblioteka-600.webp 600w, img/biblioteka-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Biblioteka ze stolikami przy dużym oknie"></button><figcaption>Biblioteka</figcaption></figure>
+        <figure><button type="button" data-duze="img/jadalnia-1200.webp"><img src="img/jadalnia-600.webp" srcset="img/jadalnia-600.webp 600w, img/jadalnia-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Jasna sala ze stolikami"></button><figcaption>Sala ze stolikami</figcaption></figure>
+        <figure><button type="button" data-duze="img/pokoj-4-1200.webp"><img src="img/pokoj-4-600.webp" srcset="img/pokoj-4-600.webp 600w, img/pokoj-4-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Pokój z dwoma łóżkami i szafą"></button><figcaption>Pokój z szafą</figcaption></figure>
+        <figure><button type="button" data-duze="img/pokoj-5-1200.webp"><img src="img/pokoj-5-600.webp" srcset="img/pokoj-5-600.webp 600w, img/pokoj-5-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 560px" width="600" height="400" loading="lazy" alt="Pokój z telewizorem"></button><figcaption>Pokój z telewizorem</figcaption></figure>
+      </div>
+      <div class="strzalki">
+        <button type="button" id="wstecz" aria-label="Poprzednie zdjęcia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" id="dalej" aria-label="Następne zdjęcia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="opieka" class="ciemna">
+  <div class="w opieka">
+    <div>
+      <h2>Opieka na co dzień</h2>
+      <svg class="dlonie" viewBox="0 0 150 22" aria-hidden="true"><path d="M1 5H52C61 5 63 19 75 19S89 5 98 5H149"/></svg>
+      <ul>
+        <li><b>Pobyt stały lub dzienny</b><span>Elastycznie, zależnie od potrzeb seniora i rodziny.</span></li>
+        <li><b>Opieka całodobowa</b><span>Wykwalifikowany personel opiekuńczo-pielęgniarski przez całą dobę.</span></li>
+        <li><b>Pięć posiłków dziennie</b><span>Smaczne, regularne posiłki przez cały dzień.</span></li>
+        <li><b>Rehabilitacja</b><span>Indywidualna i grupowa, w wyposażonej sali rehabilitacyjnej.</span></li>
+        <li><b>Terapia zajęciowa</b><span>Zajęcia, które pomagają zachować sprawność i dobry nastrój.</span></li>
+        <li><b>Opieka duszpasterska</b><span>Dla mieszkańców, którzy jej potrzebują.</span></li>
+      </ul>
+    </div>
+    <div class="foto">
+      <img src="img/rehab-1000.webp" srcset="img/rehab-640.webp 640w, img/rehab-1000.webp 1000w, img/rehab-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 32px), 540px" width="1000" height="667" loading="lazy" alt="Sala rehabilitacyjna z drabinkami, rowerkiem i stołem do ćwiczeń">
+      <p>Sala rehabilitacyjna w Domu Opieki Magnolia.</p>
+    </div>
+  </div>
+</section>
+
+<section id="okolica" class="okolica">
+  <div class="w dwa">
+    <div class="foto">
+      <img src="img/okolica-800.webp" srcset="img/okolica-480.webp 480w, img/okolica-800.webp 800w, img/okolica-1200.webp 1200w" sizes="(max-width: 900px) calc(100vw - 32px), 560px" width="800" height="1072" loading="lazy" alt="Drzewa i łąka obok Domu Opieki Magnolia">
+    </div>
+    <div>
+      <h2>Cisza, natura i troska</h2>
+      <svg class="dlonie" viewBox="0 0 150 22" aria-hidden="true"><path d="M1 5H52C61 5 63 19 75 19S89 5 98 5H149"/></svg>
+      <p>Wybierając Dom Opieki Magnolia, mają Państwo pewność, że bliska osoba jest w otoczeniu ciszy, natury i profesjonalnej troski. Wokół domu są drzewa i zieleń, a w pokojach dużo dziennego światła.</p>
+      <p class="tekst-opis">Prażmów leży blisko Piaseczna i Grójca, więc rodziny z całego regionu mogą łatwo i często odwiedzać swoich bliskich.</p>
+      <a class="btn btn-pelny" href="#kontakt">Umów wizytę w domu</a>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="szara">
+  <div class="w kontakt">
+    <div>
+      <img class="znak" src="img/znak.png" width="161" height="135" alt="" loading="lazy">
+      <h2>Zapraszamy na rozmowę i wizytę</h2>
+      <svg class="dlonie" viewBox="0 0 150 22" aria-hidden="true"><path d="M1 5H52C61 5 63 19 75 19S89 5 98 5H149"/></svg>
+      <p class="tekst-opis">Zapraszamy do kontaktu telefonicznego i do osobistego odwiedzenia domu. Na miejscu pokażemy pokoje i opowiemy o warunkach pobytu.</p>
+      <ul class="dane">
+        <li><span>Telefon</span><a href="tel:+48600332096">600 332 096</a></li>
+        <li><span>E-mail</span><a href="mailto:domopiekimagnolia@gmail.com">domopiekimagnolia@gmail.com</a></li>
+        <li><span>Adres</span><div>ul. Czołchańskiego 12B<br>05-505 Prażmów</div></li>
+      </ul>
+      <a class="btn btn-pelny" href="tel:+48600332096"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5c.5-.2 1.1 0 1.4.5l1.9 3.3c.3.5.2 1.1-.2 1.5l-1.5 1.3c1 2.2 2.8 4 5 5l1.3-1.5c.4-.4 1-.5 1.5-.2l3.3 1.9c.5.3.7.9.5 1.4l-.8 2.1c-.3.8-1.1 1.3-2 1.2C10.2 19.4 4.6 13.8 3.9 7c-.1-.9.4-1.7 1.2-2z" fill="currentColor"/></svg>Zadzwoń: 600 332 096</a>
+    </div>
+    <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Czo%C5%82cha%C5%84skiego%2012B%2C%2005-505%20Pra%C5%BCm%C3%B3w&amp;z=14&amp;hl=pl&amp;output=embed">
+      <div class="zastep">Mapa dojazdu: ul. Czołchańskiego 12B, Prażmów</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="w">
+    <div>
+      <img src="img/logo-biale.png" width="423" height="268" alt="Dom Opieki Magnolia" loading="lazy">
+      <p>Dom opieki dla seniorów w Prażmowie.<br>Zezwolenie Wojewody Mazowieckiego nr 271.</p>
+    </div>
+    <div>
+      <h3>Kontakt</h3>
+      <p><a href="tel:+48600332096">600 332 096</a></p>
+      <p><a href="mailto:domopiekimagnolia@gmail.com">domopiekimagnolia@gmail.com</a></p>
+      <p>ul. Czołchańskiego 12B<br>05-505 Prażmów</p>
+    </div>
+    <div>
+      <h3>Na stronie</h3>
+      <p><a href="#dom">O domu</a></p>
+      <p><a href="#pokoje">Pokoje</a></p>
+      <p><a href="#opieka">Opieka</a></p>
+      <p><a href="#kontakt">Kontakt</a></p>
+    </div>
+    <div class="dol">
+      <span>© 2026 Dom Opieki Magnolia</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=domopiekimagnolia.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <button class="zamknij" type="button" aria-label="Zamknij">&times;</button>
+  <button class="pop" type="button" aria-label="Poprzednie">&#8249;</button>
+  <img alt="">
+  <button class="nast" type="button" aria-label="Następne">&#8250;</button>
+  <p></p>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('otwarte');b.classList.toggle('otwarte',o);b.setAttribute('aria-expanded',o);});
+  m.addEventListener('click',function(e){if(e.target.closest('a')){m.classList.remove('otwarte');b.classList.remove('otwarte');b.setAttribute('aria-expanded','false');}});
+
+  var g=document.getElementById('galeria');
+  function krok(){var f=g.querySelector('figure');return f?f.getBoundingClientRect().width+16:400;}
+  document.getElementById('wstecz').addEventListener('click',function(){g.scrollBy({left:-krok(),behavior:'smooth'});});
+  document.getElementById('dalej').addEventListener('click',function(){g.scrollBy({left:krok(),behavior:'smooth'});});
+  var start=0,sl=0,ciag=false,przes=0;
+  g.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;ciag=true;przes=0;start=e.clientX;sl=g.scrollLeft;});
+  window.addEventListener('pointermove',function(e){if(!ciag)return;var d=e.clientX-start;przes=Math.abs(d);if(przes>5)g.classList.add('ciagnie');g.scrollLeft=sl-d;});
+  window.addEventListener('pointerup',function(){if(!ciag)return;ciag=false;g.classList.remove('ciagnie');});
+
+  var przyciski=[].slice.call(g.querySelectorAll('button[data-duze]')),lb=document.getElementById('lb'),li=lb.querySelector('img'),lp=lb.querySelector('p'),nr=0;
+  function pokaz(i){nr=(i+przyciski.length)%przyciski.length;var p=przyciski[nr];li.src=p.dataset.duze;li.alt=p.querySelector('img').alt;lp.textContent=p.parentNode.querySelector('figcaption').textContent;}
+  przyciski.forEach(function(p,i){p.addEventListener('click',function(e){if(przes>5){e.preventDefault();return;}pokaz(i);lb.classList.add('otwarte');lb.querySelector('.zamknij').focus();});});
+  lb.querySelector('.zamknij').addEventListener('click',function(){lb.classList.remove('otwarte');});
+  lb.querySelector('.pop').addEventListener('click',function(){pokaz(nr-1);});
+  lb.querySelector('.nast').addEventListener('click',function(){pokaz(nr+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('otwarte');});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('otwarte'))return;if(e.key==='Escape')lb.classList.remove('otwarte');if(e.key==='ArrowLeft')pokaz(nr-1);if(e.key==='ArrowRight')pokaz(nr+1);});
+  var tx=0;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)pokaz(nr+(d<0?1:-1));});
+
+  var mapa=document.getElementById('mapa');
+  function wstawMape(){if(mapa.dataset.ok)return;mapa.dataset.ok=1;var f=document.createElement('iframe');f.src=mapa.dataset.src;f.title='Mapa dojazdu do Domu Opieki Magnolia';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mapa.appendChild(f);}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(w){if(w[0].isIntersecting){wstawMape();io.disconnect();}},{rootMargin:'300px'});io.observe(mapa);}else wstawMape();
+})();
+</script>
+</body>
+</html>
